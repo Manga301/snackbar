@@ -6,17 +6,9 @@ let isActive = true;
 
 function createNotigfication(){
     
-    checkActiveNotification();
-
-}
-
-function checkActiveNotification(){
-
-    
     if(isActive){
-
         isActive = false;
-
+        
         const notification = document.createElement("div");
         notification.classList.add("snackbar");
         notification.classList.add("active-snackbar");
@@ -27,12 +19,10 @@ function checkActiveNotification(){
         setTimeout(() => {
             notification.remove();
             isActive = true;
-            
+
         }, 5000);
+    }  
 
-    } 
-
-    
 }
 
 
