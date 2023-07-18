@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+
+.btn {
+    background-color: #30A2FF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 20px;
+    cursor: pointer;
+    transition: margin-top .2s ease-out, box-shadow .5s ease-in;
+}
+
+.btn:hover {
+    margin-top: 30px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    transition: margin-top .2s ease-in, box-shadow .3s ease-in;
+    
+}
+
+.snackbar-container {
+    position: fixed;
+    bottom: 10px;
+    right: auto;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.snackbar {
+    background-color: #fff;
+    color: #222;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.active-snackbar {
+    margin-bottom: 50px;
+    animation: show-notification 1s ease-in;
+}
+
+@keyframes show-notification {
+    0% {
+      right: 0;  
+      opacity: 0;
+    }
+
+    100% {
+      right: 10px;
+      opacity: 1;
+    }
+  }
