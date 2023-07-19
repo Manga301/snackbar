@@ -20,7 +20,7 @@ function createNotigfication(){
             notification.remove();
             isActive = true;
 
-        }, 5000);
+        }, 3000);
     }  
 
 }
