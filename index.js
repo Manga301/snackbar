@@ -4,7 +4,7 @@ const snackbar = document.getElementById("snackbar-container");
 const message = "Success";
 let isActive = true;
 
-function createNotigfication(){
+const createNotigfication = () => {
     
     if(isActive){
         isActive = false;
